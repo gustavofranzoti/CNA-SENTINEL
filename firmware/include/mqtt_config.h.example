@@ -1,0 +1,18 @@
+#pragma once
+
+// Copie para mqtt_config.h (não versionar) e preencha localmente.
+#define CNA_WIFI_SSID ""
+#define CNA_WIFI_PASSWORD ""
+#define CNA_MQTT_HOST ""
+#define CNA_MQTT_PORT 0
+#define CNA_MQTT_TRANSPORT ""  // "ws", "wss" ou "mqtts" (TCP com TLS).
+#define CNA_MQTT_WS_PATH ""    // Caminho exato do listener WS/WSS, começando com /.
+#define CNA_MQTT_USERNAME ""
+#define CNA_MQTT_PASSWORD ""
+#if defined(CNA_ZONE_Z1)
+#define CNA_MQTT_CLIENT_ID "cna-sentinel-z1"
+#else
+#define CNA_MQTT_CLIENT_ID "cna-sentinel-z2"
+#endif
+// Para WSS ou MQTTS, informe o certificado CA PEM como string C++ multilinha.
+#define CNA_MQTT_CA_CERT ""

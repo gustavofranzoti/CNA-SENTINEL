@@ -1,0 +1,26 @@
+# Credenciais locais (o modelo pode ser versionado)
+.env
+.env.*
+!.env.example
+
+# PlatformIO e configuracoes locais do editor
+.pio/
+.vscode/
+
+# Python (etapas futuras)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Arquivos locais do sistema
+.DS_Store
+Thumbs.db
+.pio/
+firmware/include/mqtt_config.h
+
+# Cache de testes
+.pytest_cache/
+
+# Binários gerados para simulação Wokwi
+simulator/*/firmware.bin
+simulator/*/firmware.elf
